@@ -1,0 +1,53 @@
+.aboutUs {
+	background-color: #FDF2FF;
+	border: 1px solid transparent;
+}
+.wrapper {
+	display: flex;
+	justify-content: space-around;
+	margin: 100px 0;
+
+	@include phone {
+		margin: 70px 0;
+		display: block;
+	}
+
+	@include tablet {
+		margin: 70px 0;
+		display: block;
+	}
+
+	@include tablet-landscape {
+		margin: 70px 0;
+		display: block;
+	}
+}
+.item {
+	@include phone {
+		margin-bottom: 40px;
+		padding: 0 40px;
+	}
+
+	@include tablet {
+		margin-bottom: 40px;
+		padding: 0 125px;
+	}
+
+	@include tablet-landscape {
+		margin-bottom: 40px;
+		padding: 0 220px;
+	}
+
+	&__number {
+		margin-top: 20px;
+		font-family: "Poppins";
+		font-size: 40px;
+	}
+
+	&__text {
+		padding-right: 10px;
+		font-family: "SourceSansPro-Regular";
+		font-size: 16px;
+		color: #333333;
+	}
+}
