@@ -3,20 +3,34 @@
 	border: 1px solid transparent;
 }
 .wrapper {
-	
-}
-.item {
+	margin: 100px 0;
 
 	@include phone {
-		
+		margin: 70px 0;
 	}
 
 	@include tablet {
-		
+		margin: 70px 0;
 	}
 
 	@include tablet-landscape {
-		
+		margin: 70px 0;
+	}
+}
+.item {
+	@include phone {
+		margin-bottom: 40px;
+		padding: 0 30px;
+	}
+
+	@include tablet {
+		margin-bottom: 40px;
+		padding: 0 130px;
+	}
+
+	@include tablet-landscape {
+		margin-bottom: 40px;
+		padding: 0 50px;
 	}
 
 	&__number {

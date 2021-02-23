@@ -45,40 +45,9 @@
   }
 }
 .header__menu-item-icon {
-  display: none;
   font-size: 25px;
   color: white;
   text-decoration: none;
-}
-@media (max-width: 576px) {
-  .header__menu-item-icon.mobDev {
-    display: inline;
-  }
-}
-@media (min-width: 577px) and (max-width: 767px) {
-  .header__menu-item-icon.mobDev {
-    display: inline;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .header__menu-item-icon.mobDev {
-    display: inline;
-  }
-}
-@media (max-width: 576px) {
-  .header__menu-item.mobDev {
-    display: none;
-  }
-}
-@media (min-width: 577px) and (max-width: 767px) {
-  .header__menu-item.mobDev {
-    display: none;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .header__menu-item.mobDev {
-    display: none;
-  }
 }
 .header__menu-button {
   padding: 10px 25px;
@@ -92,21 +61,6 @@
 .header__menu-button:hover {
   border: 1px solid #FFC300;
   background-color: #FFC300;
-}
-@media (max-width: 576px) {
-  .header__menu-button.mobDev {
-    display: none;
-  }
-}
-@media (min-width: 577px) and (max-width: 767px) {
-  .header__menu-button.mobDev {
-    display: none;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .header__menu-button.mobDev {
-    display: none;
-  }
 }
 
 .contentWrapper {
@@ -233,7 +187,7 @@
   left: 10px;
   font-size: 30px;
   color: white;
-  opacity: 0.8;
+  opacity: 0.6;
   text-decoration: none;
 }
 @media (max-width: 576px) {
@@ -261,7 +215,7 @@
   right: 10px;
   font-size: 30px;
   color: white;
-  opacity: 0.8;
+  opacity: 0.6;
   text-decoration: none;
 }
 @media (max-width: 576px) {
@@ -283,51 +237,46 @@
   }
 }
 
-.aboutUs {
+.statistics {
   background-color: #FDF2FF;
   border: 1px solid transparent;
 }
 
 .wrapper {
-  display: flex;
-  justify-content: space-around;
   margin: 100px 0;
 }
 @media (max-width: 576px) {
   .wrapper {
     margin: 70px 0;
-    display: block;
   }
 }
 @media (min-width: 577px) and (max-width: 767px) {
   .wrapper {
     margin: 70px 0;
-    display: block;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .wrapper {
     margin: 70px 0;
-    display: block;
   }
 }
 
 @media (max-width: 576px) {
   .item {
     margin-bottom: 40px;
-    padding: 0 40px;
+    padding: 0 30px;
   }
 }
 @media (min-width: 577px) and (max-width: 767px) {
   .item {
     margin-bottom: 40px;
-    padding: 0 125px;
+    padding: 0 130px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .item {
     margin-bottom: 40px;
-    padding: 0 220px;
+    padding: 0 50px;
   }
 }
 .item__number {

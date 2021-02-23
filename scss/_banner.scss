@@ -28,6 +28,7 @@
 
 	&__menu {
 		text-align: right;
+
 		&-item {
 			margin-right: 35px;
 			font-family: "SourceSansPro";
@@ -40,38 +41,9 @@
 			}
 
 			&-icon {
-				display: none;
 				font-size: 25px;
 				color: white;
 				text-decoration: none;
-
-				&.mobDev {
-					@include phone {
-						display: inline;
-					}
-
-					@include tablet {
-						display: inline;
-					}
-
-					@include tablet-landscape {
-						display: inline;
-					}
-				}
-			}
-
-			&.mobDev{
-				@include phone {
-					display: none;
-				}
-
-				@include tablet {
-					display: none;
-				}
-
-				@include tablet-landscape {
-					display: none;
-				}
 			}
 		}
 
@@ -88,20 +60,6 @@
 				border: 1px solid #FFC300;
 				background-color: #FFC300;
 			}
-
-			&.mobDev {
-				@include phone {
-					display: none;
-				}
-
-				@include tablet {
-					display: none;
-				}
-
-				@include tablet-landscape {
-					display: none;
-				}
-			} 
 		}
 	}
 }
@@ -223,7 +181,7 @@
 	left: 10px;
 	font-size: 30px;
 	color: white;
-	opacity: 0.8;
+	opacity: 0.6;
 	text-decoration: none;
 
 		@include phone {
@@ -247,7 +205,7 @@
 	right: 10px;
 	font-size: 30px;
 	color: white;
-	opacity: 0.8;
+	opacity: 0.6;
 	text-decoration: none;
 
 		@include phone {
