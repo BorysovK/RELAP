@@ -1,0 +1,108 @@
+.pageWithCircles {
+	background-color: #3023AE;
+	position: relative;
+}
+.ovalTop {
+	position: absolute;
+	top: -50px;
+	left: 50%;
+
+	@include phone {
+		top: -30px;
+	}
+
+	@include tablet {
+		top: -30px;
+	}
+
+	@include tablet-landscape {
+		top: -30px;
+	}
+}
+.ovalLeft {
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+}
+.ovalRight {
+	position: absolute;
+	bottom: 0px;
+	left: 60%;
+}
+
+.ovalMD {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+.slogan {
+	margin-top: 93px;
+	margin-bottom: 18px;
+	font-family: "Poppins";
+	font-size: 16px;
+	color: white;
+}
+.title {
+	margin-bottom: 121px;
+	width: 563px;
+	font-family: "Poppins";
+	font-size: 56px;
+	color: white;
+
+	@include phone {
+		width: 257px;
+		margin-bottom: 25px;
+		font-size: 48px;
+	}
+
+	@include tablet {
+		width: 257px;
+		margin-bottom: 25px;
+		font-size: 48px;
+	}
+
+	@include tablet-landscape {
+		width: 257px;
+		margin-bottom: 25px;
+		font-size: 48px;
+	}
+}
+.buttonWrapper {
+	text-align: center;
+	margin-top: 180px;
+
+	@include phone {
+		margin-top: 25px;
+		margin-bottom: 80px;
+	}
+
+	@include tablet {
+		margin-top: 25px;
+		margin-bottom: 80px;
+	}
+
+	@include tablet-landscape {
+		margin-top: 25px;
+		margin-bottom: 80px;
+	}
+
+	@include desktop {
+		text-align: right;
+	}
+
+	&__button {
+		padding: 12px 58px;
+		border: 1px solid #FFC300;
+		border-radius: 25px;
+		background-color: #FFC300;
+		font-family: "SourceSansPro";
+		font-size: 16px;
+		color: white;
+		transition: 0.3s;
+
+		&:hover {
+			border: 1px solid #C86DD7;
+			background-color: #C86DD7;
+		} 
+	}
+}

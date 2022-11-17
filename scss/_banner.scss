@@ -1,0 +1,225 @@
+.banner {
+	background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 1px solid transparent;
+}
+.header {
+	margin-top: 25px;
+	margin-bottom: 67px;
+	color: white;
+
+	&__logo {
+		font-family: "Poppins";
+		font-size: 40px;
+
+		@include phone {
+			font-size: 32px;
+		}
+
+		@include tablet {
+			font-size: 32px;
+		}
+
+		@include tablet-landscape {
+			font-size: 32px;
+		}
+	}
+
+	&__menu {
+		text-align: right;
+
+		&-item {
+			margin-right: 35px;
+			font-family: "SourceSansPro";
+			font-size: 16px;
+			text-decoration: none;
+			color: white;
+
+			@include desktop {
+				margin-right: 15px;
+			}
+
+			&-icon {
+				font-size: 25px;
+				color: white;
+				text-decoration: none;
+			}
+		}
+
+		&-button {
+			padding: 10px 25px;
+			border: 1px solid white;
+			border-radius: 25px;
+			background-color: transparent;
+			font-family: "SourceSansPro";
+			font-size: 16px;
+			transition: 0.3s;
+
+			&:hover {
+				border: 1px solid #FFC300;
+				background-color: #FFC300;
+			}
+		}
+	}
+}
+.contentWrapper {
+	display: flex;
+	justify-content: space-between;
+
+	@include phone {
+		display: block;
+	}
+
+	@include tablet {
+		display: block;
+	}
+
+	@include tablet-landscape {
+		display: block;
+	}
+
+	&__content {
+		margin-top: 202px;
+		color: white;
+
+		@include phone {
+			margin-top: 60px;
+		}
+
+		@include tablet {
+			margin-top: 60px;
+		}
+
+		@include tablet-landscape {
+			margin-top: 60px;
+		}
+
+		&-slogan {
+			margin-bottom: 23px;
+			font-family: "Poppins";
+			font-size: 16px;
+		}
+
+		&-title {
+			margin-bottom: 48px;
+			font-family: "Poppins";
+			font-size: 72px;
+
+			@include phone {
+				margin-bottom: 35px;
+				font-size: 56px;
+			}
+
+			@include tablet {
+				margin-bottom: 35px;
+				font-size: 56px;
+			}
+
+			@include tablet-landscape {
+				margin-bottom: 35px;
+				font-size: 56px;
+			}
+
+			@include desktop {
+				font-size: 50px;
+			}
+		}
+
+		&-button {
+			padding: 12px 45px;
+			border: 1px solid white;
+			border-radius: 25px;
+			background-color: transparent;
+			font-family: "SourceSansPro";
+			font-size: 16px;
+			transition: 0.3s;
+
+			&:hover {
+				border: 1px solid #FFC300;
+				background-color: #FFC300;
+			} 
+		}
+	}
+
+	&__img {
+
+		@include phone {
+			margin-top: 35px;
+			text-align: center;
+		}
+
+		@include tablet {
+			margin-top: 35px;
+			text-align: center;
+		}
+
+		@include tablet-landscape {
+			margin-top: 35px;
+			text-align: center;
+		}
+
+		&-image {
+
+			@include phone {
+				width: 272px;
+			}
+
+			@include tablet {
+				width: 272px;
+			}
+
+			@include tablet-landscape {
+				width: 272px;
+			}
+		}	
+	}
+}
+.leftIcon {
+	position: absolute;
+	top: 410px;
+	left: 10px;
+	font-size: 30px;
+	color: white;
+	opacity: 0.6;
+	text-decoration: none;
+
+		@include phone {
+			top: 590px;
+			left: 10px;
+		}
+
+		@include tablet {
+			top: 540px;
+			left: 10px;
+		}
+
+		@include tablet-landscape {
+			top: 500px;
+			left: 10px;
+		}
+}
+.rightIcon {
+	position: absolute;
+	top: 410px;
+	right: 10px;
+	font-size: 30px;
+	color: white;
+	opacity: 0.6;
+	text-decoration: none;
+
+		@include phone {
+			top: 590px;
+			right: 10px;
+		}
+
+		@include tablet {
+			top: 540px;
+			right: 10px;
+		}
+
+		@include tablet-landscape {
+			top: 500px;
+			right: 10px;
+		}
+}

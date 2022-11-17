@@ -1,0 +1,182 @@
+.wrapper {
+	margin: 140px 0;
+
+		@include phone {
+			margin: 45px 0;
+		}
+
+		@include tablet {
+			margin: 45px 0;
+		}
+
+		@include tablet-landscape {
+			margin: 45px 0;
+		}
+}
+.content {
+	color: #333;
+
+	@include phone {
+		margin-bottom: 80px;
+	}
+
+	@include tablet {
+		margin-bottom: 80px;
+	}
+
+	@include tablet-landscape {
+		margin-bottom: 80px;
+	}
+	
+	&__slogan {
+		margin-bottom: 20px;
+		font-family: "Poppins";
+		font-size: 24px;
+
+		@include phone {
+			font-size: 16px;
+		}
+
+		@include tablet {
+			font-size: 16px;
+		}
+
+		@include tablet-landscape {
+			font-size: 16px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 30px;
+		font-family: "Poppins";
+		font-size: 56px;
+
+		@include phone {
+			font-size: 40px;
+			margin-bottom: 25px;
+		}
+
+		@include tablet {
+			font-size: 40px;
+			margin-bottom: 25px;
+		}
+
+		@include tablet-landscape {
+			font-size: 40px;
+			margin-bottom: 25px;
+		}
+	}
+
+	&__text {
+		width: 320px;
+		margin-bottom: 30px;
+		font-family: "SourceSansPro";
+		font-size: 16px;
+		color: #333;
+
+		@include phone {
+			width: 100%;
+		}
+
+		@include desktop {
+			width: 250px;
+		}
+	}
+
+	&__button {
+		padding: 12px 45px;
+		border: 1px solid #C86DD7;
+		border-radius: 25px;
+		background-color: #C86DD7;
+		font-family: "SourceSansPro";
+		font-size: 16px;
+		color: white;
+		transition: 0.3s;
+
+		&:hover {
+			border: 1px solid #FFC300;
+			background-color: #FFC300;
+		} 
+	}
+}
+.imageAndText {
+	display: flex;
+	justify-content: space-between;
+	background: linear-gradient(224.72deg, #3023AE -1%, #C86DD7 100.5%);
+
+		@include phone {
+			display: block;
+		}
+
+		@include tablet {
+			display: block;
+		}
+
+		@include tablet-landscape {
+			display: block;
+		}
+
+	&__img {
+		width: 100%;
+		margin: -27px 25px 27px -27px;
+	}
+
+	&__text {
+		margin-top: 40px;
+		color: white;
+
+		@include phone {
+			margin-top: 0;
+			margin-bottom: 40px;
+		}
+
+		@include tablet {
+			margin-top: 0;
+			margin-bottom: 40px;
+
+		}
+
+		@include tablet-landscape {
+			margin-top: 0;
+			margin-bottom: 40px;
+
+		}
+
+		&--bold {
+			width: 160px;
+			font-family: "Poppins";
+			font-size: 40px;
+			color: white;
+
+			@include phone {
+				width: 100%;
+			}
+
+			@include tablet {
+				width: 100%;
+			}
+
+			@include tablet-landscape {
+				width: 100%;
+			}
+		}
+
+		&--regular {
+			width: 238px;
+			font-family: "SourceSansPro-Regular";
+			font-size: 16px;
+
+			@include phone {
+				width: 100%;
+			}
+
+			@include tablet {
+				width: 100%;
+			}
+
+			@include tablet-landscape {
+				width: 100%;
+			}
+		}
+	}
+}
